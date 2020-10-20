@@ -30,5 +30,10 @@ namespace ModelLib.model
             get => _port;
             set => _port = value;
         }
+
+        public override string ToString()
+        {
+            return $"{nameof(IpAddress)}: {IpAddress}, {nameof(Port)}: {Port}";
+        }
     }
 }
